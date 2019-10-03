@@ -11,11 +11,11 @@ import json
 
 # You need to update the SUBSCRIPTION_KEY to 
 # they key for your Computer Vision Service
-SUBSCRIPTION_KEY = "xxxxxxxxxxxxxxxxxxxxxxxxxxx"
+SUBSCRIPTION_KEY = "c1f1b1c175c5457fb8bdd14c525b0b54"
 
 # You need to update the vision_service_address to the address of
 # your Computer Vision Service
-vision_service_address = "https://canadacentral.api.cognitive.microsoft.com/vision/v2.0/"
+vision_service_address = "https://pythonimageanalize.cognitiveservices.azure.com/"
 
 # Add the name of the function you want to call to the address
 address = vision_service_address + "analyze"
@@ -26,7 +26,7 @@ parameters  = {'visualFeatures':'Description,Color',
                'language':'en'}
 
 # Open the image file to get a file object containing the image to analyze
-image_path = "./TestImages/PolarBear.jpg"
+image_path = "./home/share/Desktop/PolarBear.jpeg"
 image_data = open(image_path, "rb").read()
 
 # According to the documentation for the analyze image function
