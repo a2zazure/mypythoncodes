@@ -1,4 +1,4 @@
 import helpers
 helpers.display('Simple Message', True)
 print()
-helpers.display('Simple Message 2', False)
+helpers.display('Simple Message All', False)
